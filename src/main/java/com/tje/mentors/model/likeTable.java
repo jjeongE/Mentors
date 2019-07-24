@@ -1,15 +1,15 @@
 package com.tje.mentors.model;
 
-public class likeTable {
+public class LikeTable {
 	private int like_id;
 	private int lesson_id;
 	private int menti_id;
 	
-	public likeTable() {
+	public LikeTable() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public likeTable(int like_id, int lesson_id, int menti_id) {
+	public LikeTable(int like_id, int lesson_id, int menti_id) {
 		super();
 		this.like_id = like_id;
 		this.lesson_id = lesson_id;

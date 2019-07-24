@@ -10,6 +10,7 @@ public class Mentor {
 	private int mentor_categoryBig;
 	private String mentor_profile;
 	private String mentor_info;
+	private String phone;
 	private Date regist_date;
 	
 	public Mentor() {
@@ -17,7 +18,7 @@ public class Mentor {
 	}
 
 	public Mentor(int mentor_id, String mentor_email, String mentor_name, String mentor_password,
-			int mentor_categoryBig, String mentor_profile, String mentor_info, Date regist_date) {
+			int mentor_categoryBig, String mentor_profile, String mentor_info, String phone, Date regist_date) {
 		super();
 		this.mentor_id = mentor_id;
 		this.mentor_email = mentor_email;
@@ -91,6 +92,14 @@ public class Mentor {
 
 	public void setRegist_date(Date regist_date) {
 		this.regist_date = regist_date;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 	
 }

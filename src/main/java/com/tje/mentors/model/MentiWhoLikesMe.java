@@ -7,13 +7,14 @@ public class MentiWhoLikesMe {
 	private String menti_name;
 	private String menti_email;
 	private String title;
+	private int mentor_id;
 	
 	public MentiWhoLikesMe() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public MentiWhoLikesMe(int like_id, int lesson_id, int menti_id, String menti_name, String menti_email,
-			String title) {
+			String title, int mentor_id) {
 		super();
 		this.like_id = like_id;
 		this.lesson_id = lesson_id;
@@ -21,6 +22,7 @@ public class MentiWhoLikesMe {
 		this.menti_name = menti_name;
 		this.menti_email = menti_email;
 		this.title = title;
+		this.mentor_id = mentor_id;
 	}
 
 	public int getLike_id() {
@@ -69,6 +71,14 @@ public class MentiWhoLikesMe {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public int getMentor_id() {
+		return mentor_id;
+	}
+
+	public void setMentor_id(int mentor_id) {
+		this.mentor_id = mentor_id;
 	}
 	
 }

@@ -22,7 +22,12 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.tje.mentors" />
-	
+	<!-- @controller 어노테이션이 적용된 클래스들을 스프링 빈으로 등록 -->
+	<context:component-scan base-package="com.tje.mentors.controller" />
+	<!-- @service 어노테이션이 적용된 클래스들을 스프링 빈으로 등록 -->
+	<context:component-scan base-package="com.tje.mentors.service" />
+	<!-- @repository (일반적으로 dao - 디비랑 연결되는 그런 부분) 어노테이션이 적용된 클래스들을 스프링 빈으로 등록 -->
+	<context:component-scan base-package="com.tje.mentors.repository" />
 	
 	
 </beans:beans>
